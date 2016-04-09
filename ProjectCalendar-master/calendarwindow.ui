@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalendarWindow</class>
+ <widget class="QMainWindow" name="CalendarWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1006</width>
+    <height>605</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Agenda</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>981</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="previous_week">
+         <property name="text">
+          <string>Précédent</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="choose_week"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="next_week">
+         <property name="text">
+          <string>Suivant</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="agenda_widget">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="dragDropOverwriteMode">
+        <bool>false</bool>
+       </property>
+       <property name="showGrid">
+        <bool>true</bool>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>131</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>00h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>01h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>02h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>03h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>04h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>05h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>06h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>07h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>08h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>09h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>10h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>11h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>12h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>13h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>14h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>15h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>16h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>17h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>18h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>19h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>20h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>21h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>22h00</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>23h00</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Lundi</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Mardi</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Mercredi</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Jeudi</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Vendredi</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Samedi</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Dimanche</string>
+        </property>
+       </column>
+       <item row="1" column="1">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="background">
+         <brush brushstyle="NoBrush">
+          <color alpha="255">
+           <red>255</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1006</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
